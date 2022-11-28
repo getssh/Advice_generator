@@ -36,6 +36,9 @@
 .divider {
   width: 90%;
   object-fit: contain;
+  position: absolute;
+  top: 78%;
+  left: 10%;
 }
 
 .btn {
