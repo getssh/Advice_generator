@@ -9,15 +9,17 @@
 
 .advice-container {
   background-color: hsl(217, 19%, 24%);
-  width: 34%;
+  width: 32%;
+  height: 35%;
   object-fit: contain;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   border-radius: 1.2rem;
   position: relative;
+  text-align: center;
 }
 
 .advice-id {
@@ -27,6 +29,8 @@
 .advice {
   color: hsl(193, 38%, 86%);
   font-size: 1.7rem;
+  margin: 0rem 1rem 4rem 1rem;
+  font-weight: 800;
 }
 
 .divider {
@@ -45,5 +49,27 @@
 .btn:hover {
   box-shadow: 3px 3px 13px hsl(150, 100%, 66%);
   box-shadow: -3px -3px 13px hsl(150, 100%, 66%);
+  cursor: pointer;
+}
 
+@media screen and (max-width: 900px) {
+  .advice-container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .advice-container {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .advice-container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .advice-container {
+    width: 90%;
+    height: 50%;
+  }
 }
